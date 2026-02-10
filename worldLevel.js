@@ -50,6 +50,37 @@ class WorldLevel {
 
     // Convert raw platform objects into Platform instances.
     this.platforms = (levelJson.platforms || []).map((p) => new Platform(p));
+
+    if (levelJson.grid) {
+      const tileSize = levelJson.tileSize ?? 40;
+      const grid = levelJson.grid;
+
+      for (let row = 0; row < grid.length; row++) {
+        for (let col = 0; col < grid[row].length; col++) {
+          const cell = grid[row][col];
+          const x = col * tileSize;
+          const y = row * tileSize;
+
+          if (cell === 1) {
+            // Full tile as a platform
+            this.platforms.push(
+              new Platform({ x, y, w: tileSize, h: tileSize }),
+            );
+          } else if (cell === 3) {
+            // Example: “small platform” half height
+            this.platforms.push(
+              new Platform({
+                x,
+                y: y + tileSize * 0.5,
+                w: tileSize,
+                h: tileSize * 0.5,
+              }),
+            );
+          }
+          // If you want spikes or other obstacles, see Option C below
+        }
+      }
+    }
   }
 
   /*
