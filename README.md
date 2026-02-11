@@ -1,31 +1,33 @@
 ## Project Title
 
-GBDA302 Week 4 Example 5: Blob Platformer (JSON + Classes)
+GBDA302 Week 4 Sidequest: New Blob Platformer Level
 
 ---
 
 ## Authors
 
-Karen Cochrane and David Han
+Nila Sivapragasam - 21080519 (original Code written by Karen Cochrane and David Han)
 
 ---
 
 ## Description
 
-This matches the structure of the original blob sketch from Week 2 but moves
-details into classes.
+In this game, players control a blob that jumps across platforms. Players press 'n' to switch levels.
 
 ---
 
-## Learning Goals
+## Setup and Interaction Instructions
 
-Learning Goals:
+- Open Github link to launch the game
+- Use left/right arrow keys or W/D keys to move
+- Use space or W key to jump
+- Press N to switch levels
 
-- - load JSON in preload()
-- create WorldLevel from JSON
-- create BlobPlayer
-- update + draw each frame
-- handle input events (jump, optional next level)
+---
+
+## Iteration Notes
+
+N/A
 
 ---
 
@@ -35,8 +37,8 @@ N/A
 
 ---
 
-## GenAI
+## References
 
-The code was written by Dr. Karen Cochrane and David Han but they used GenAI to write the comments.
+N/A
 
 ---

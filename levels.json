@@ -16,10 +16,10 @@
       ]
     },
     {
-      "name": "Level 2",
+      "name": "Level 2: Tighter Jumps",
       "gravity": 0.65,
       "jumpV": -11.0,
-      "theme": { "bg": "#3C8CC9", "platform": "#5bb58e", "blob": "#1478FF" },
+      "theme": { "bg": "#abd1ed", "platform": "#5bb58e", "blob": "#1478FF" },
       "start": { "x": 60, "y": 298, "r": 26 },
 
       "platforms": [
